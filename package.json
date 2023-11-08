@@ -1,11 +1,12 @@
 {
-  "name": "vanilla-app-template",
+  "name": "project-js-preparation",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/project-js-preparation/",
     "preview": "vite preview"
   },
   "devDependencies": {
