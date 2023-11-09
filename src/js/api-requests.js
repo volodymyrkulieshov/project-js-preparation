@@ -7,7 +7,14 @@ export class API_SERVICE {
     this.selectedCategory = selectedCategory;
     this.bookId = bookId;
   }
+  // -------------Запит на категорії-----------------------------
   booksListRequest() {
     return axios.get(`${this.#BASE_URL}books/category-list`);
+  }
+
+  // ---------------Запит на ТОП книги(бестселлери)-----------------
+
+  topBooksRequest() {
+    return axios.get(`${this.#BASE_URL}books/top-books`);
   }
 }
