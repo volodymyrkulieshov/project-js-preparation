@@ -8,7 +8,7 @@ export class API_SERVICE {
     this.bookId = bookId;
   }
   // -------------Запит на категорії-----------------------------
-  booksListRequest() {
+  booksGategoryListRequest() {
     return axios.get(`${this.#BASE_URL}books/category-list`);
   }
 
@@ -16,5 +16,17 @@ export class API_SERVICE {
 
   topBooksRequest() {
     return axios.get(`${this.#BASE_URL}books/top-books`);
+  }
+
+  // -------------Запит на категорію книги (категорії в сайд барі і по кнопці see more) -----------------
+
+  categoryRequest() {
+    return axios.get(
+      `${this.#BASE_URL}books/category?category=${selectedCategory}`
+    );
+  }
+
+  bookIdRequest() {
+    return axios.get(`${this.#BASE_URL}books/${this.bookId}`);
   }
 }
