@@ -18,15 +18,15 @@ export class API_SERVICE {
     return axios.get(`${this.#BASE_URL}books/top-books`);
   }
 
-  // -------------Запит на категорію книги (категорії в сайд барі і по кнопці see more) -----------------
+  // -------------Запит на категорію книги, примає назву категорії книги (категорії в сайд барі і по кнопці see more) -----------------
 
-  categoryRequest() {
+  categoryRequest(selectedCategory) {
     return axios.get(
       `${this.#BASE_URL}books/category?category=${selectedCategory}`
     );
   }
-
-  bookIdRequest() {
-    return axios.get(`${this.#BASE_URL}books/${this.bookId}`);
+  // -------------Запит на інформацію про книгу (приймає ID книги) -----------------
+  bookIdRequest(bookId) {
+    return axios.get(`${this.#BASE_URL}books/${bookId}`);
   }
 }
