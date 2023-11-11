@@ -16,7 +16,7 @@ async function getBooksCategoryList() {
     //   throw new Error();
     //    return
     // }
-    const resp = await api.booksGategoryListRequest();
+    const resp = await api.fetchBooksCategoryList();
     // Loading.remove('Loading...');
     const data = await resp.data;
     return data;

@@ -11,7 +11,7 @@ const bookGallery = document.querySelector('.books-gallery');
 async function getBestSellers() {
   try {
     // Loading.standard('Loading...');
-    const response = await api.topBooksRequest();
+    const response = await api.fetchBestSellersBooks();
     // Loading.remove('Loading...');
     const bestSellers = await response.data;
     return bestSellers;

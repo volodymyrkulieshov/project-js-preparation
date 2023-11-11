@@ -4,7 +4,7 @@ const bookCollection = document.querySelector('.books-gallery');
 const api = new API_SERVICE();
 
 export default async function createMarkup(category) {
-  const res = await api.categoryRequest(category);
+  const res = await api.fetchBooksByCategory(category);
   //   console.log(res);
   const books = await res.data;
   //   console.log(books);
