@@ -4,8 +4,8 @@
 }
 .container.footer_container {
   border: 1.5px solid var(--dark-theme-componemt);
-  border-radius: 8px;
-  border-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   padding-top: 13px;
   padding-bottom: 14px;
   height: 72px;

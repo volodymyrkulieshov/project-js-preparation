@@ -33,7 +33,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .section {
     padding-bottom: 100px;
@@ -78,13 +77,12 @@ body {
   margin-left: 50px;
   width: max-content;
   font-size: 18px;
-  font-weight: 500; 
-   white-space: nowrap;
+  font-weight: 500;
+  white-space: nowrap;
   overflow: hidden;
   -webkit-animation: type 5s steps(50, end);
   animation: type 5s steps(50, end) infinite;
 }
-
 
 @keyframes type {
   from {
@@ -99,15 +97,15 @@ body {
   from {
     width: 0;
   }
-     to {
-       width: 340px;
-     }
+  to {
+    width: 340px;
+  }
 }
 
-.sign:hover, .sign:focus {
+.sign:hover,
+.sign:focus {
   color: var(--color-blue-component);
 }
 
 @media screen and (max-width: 348px) {
-  
 }
