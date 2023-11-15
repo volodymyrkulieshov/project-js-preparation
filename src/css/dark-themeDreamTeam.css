@@ -36,10 +36,20 @@ color: var(--white-text);
 color: var(--background_m);
 }
 
+.darkmode .header-nav-link:hover,
+.darkmode .header-nav-link:focus{
+color: var(--background_active);
+}
+
 /* Categories dark theme */
 
 .darkmode .genre{
   color: var(--text-gray);
+}
+
+.darkmode .genre:hover,
+.darkmode .genre:focus{
+  color: var(--background_active);
 }
 
 .darkmode .genre.active{
@@ -49,3 +59,6 @@ color: var(--background_m);
 .darkmode ::-webkit-scrollbar-thumb {
   background: rgba(17, 17, 17, 0.6);
 }
+
+/* Home books dark theme */
+
